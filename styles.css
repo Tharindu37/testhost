@@ -39,13 +39,6 @@
     align-items: center;
     padding: 20px;
 }
-.image-wrap{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    display: flex;
-    overflow: hidden;
-}
 .name-wrap{
     padding: 5px;
 }
