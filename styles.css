@@ -41,6 +41,17 @@
     align-items: center;
     padding: 20px;
 }
+.image{   
+    align-items: center; 
+}
+.img{ border-radius: 50%;
+    width: 150px;;
+    height: 150px;  
+    padding: 60px;
+ }
 .name-wrap{
     padding: 5px;
+   
 }
+
+
