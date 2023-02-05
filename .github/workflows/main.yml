@@ -1,0 +1,28 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AWS_REGION: us-west-2
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Configure AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: AKIA4SPGXVIKQOBLWTRD
+        aws-secret-access-key: 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
+        aws-region: us-east-2
+
+    - name: Deploy to S3
+      run: |
+        aws s3 sync . s3://developerstackimage --delete
